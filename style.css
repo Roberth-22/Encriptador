@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6FF;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2.5% 0% 0% 2.5%;
+    margin-bottom: 50px;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 80px;
+}
+
+textarea {
+    width: 680px;
+    height: 450px;
+    padding: 0px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+    background-color: #F6F6FF;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start; /* Los botones se alinean a la izquierda */
+    gap: 10px;
+    margin-top: 10px; /* Reducido el margen superior */
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.encrypt-button {
+    background-color: #1664a4;
+    color: #fff;
+}
+
+.encrypt-button:hover {
+    background-color: #1e3753;
+}
+
+.decrypt-button {
+    background-color: #b3c0d6;
+    color: #333;
+}
+
+.decrypt-button:hover {
+    background-color: #98a7c1;
+}
+
+.niño{
+    width: 336px;
+    height: 304px;
+}
+
+@media (max-width: 700px) {
+    .principal {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    textarea {
+        width: 100%;
+        height: 300px;
+        font-size: 20px;
+    }
+
+    .output-section {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .niño {
+        width: 70%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
